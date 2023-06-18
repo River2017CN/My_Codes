@@ -24,5 +24,4 @@ while not bingo:
         answer = int(guess)
         bingo = isOK(answer,num)
     except:
-        print("Wrong input type. GAME OVER.")
-        exit()
+        print("Wrong input type. Try again.")
