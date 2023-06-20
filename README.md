@@ -1,4 +1,4 @@
-# My_Python_Codes
+# My Codes
 Just to preserve the learnings. Making Progress Day by Day.
 
 ## license
