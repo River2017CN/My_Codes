@@ -17,6 +17,14 @@ def isOK(num1,num2): # 定义函数
     print("You have " + str(chance) + " chances left!")
     return False
 
+'''
+def isFUCK(fak):  #无意义函数，但是我真的写了！
+    global chance,guess
+    match fak:
+        case num:
+            return True
+'''
+
 num = random.randint(1, 100)  # 在1到100之间取一个随机数
 
 print("Guess which number am I thinking?(1-100)")
