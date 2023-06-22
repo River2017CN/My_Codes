@@ -1,17 +1,18 @@
 import random  # 导入random模
 chance = 10  #回合次数限制
-guess = ""
+guessed = ""
 
-def isOK(num1,num2): # 定义函数
-    global chance,guess  #程序怎么run了？把这去掉试试！
-    if num1 < 0 or num1 > 100:
+def verify(player_answer:int,really_answer:int): # 定义函数
+    """Is player's answer match?"""
+    global chance,guessed  #程序怎么run了？把这去掉试试！
+    if player_answer < 0 or player_answer > 100:
         print("Out of range. Please try again.")
-    elif 0 < num1 < num2:
-        print(guess + " is too small!")
-    elif num1 > num2:
-        print(guess + " is too big!")
+    elif 0 < player_answer < really_answer:
+        print(guessed + " is too small!")
+    elif player_answer > really_answer:
+        print(guessed + " is too big!")
     else:
-        print("BINGO! It is " + guess + " !")
+        print("BINGO! It is " + guessed + " !")
         return True
     chance -= 1
     print("You have " + str(chance) + " chances left!")
@@ -19,27 +20,36 @@ def isOK(num1,num2): # 定义函数
 
 '''
 def isFUCK(fak):  #无意义函数，但是我真的写了！
+    """Fuck you"""
     global chance,guess
     match fak:
         case num:
             return True
 '''
 
-num = random.randint(1, 100)  # 在1到100之间取一个随机数
+r_answer = random.randint(1, 100)  # 在1到100之间取一个随机数
 
 print("Guess which number am I thinking?(1-100)")
 bingo = False
 
+
 while not bingo:
     if chance == 0:
         print("You have no more chances!")
-        print("The answer is " + str(num) + " !")
+        print("The answer is " + str(r_answer) + " !")
         print("GAME OVER")
         bingo = True
         break
-    guess = input()
+
+    guessed = input("Your answer:")
+    allowed = False
+
     try:
-        answer = int(guess)
+        p_answer = int(guessed)
+        allowed = True
     except:
         print("Wrong input type. Try again.")
-    bingo = isOK(answer,num)
+    if allowed:
+        bingo = verify(p_answer,r_answer)
+    else:
+        chance -= 1
