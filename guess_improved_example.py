@@ -62,5 +62,5 @@ while True:
     m = inp_m("你有多大胜算呢？输入最大尝试次数吧: ", 3, 10)
     game = Guess(m, r)
     while not game.end:
-        game.answer(inp_int("输入数字: "))
+        game.answer(inp_m("输入数字: ", 0, r))
     played = True
