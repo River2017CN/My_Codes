@@ -24,7 +24,7 @@ class Guess:
             self.bingo = True
         elif Player_answer > 100 or Player_answer < 0:
             self.chances -= 1
-            print(f"{Player_answerr} is out of range. Please try again.")
+            print(f"{Player_answer} is out of range. Please try again.")
             print(f"You have {self.chances} times left!")
         elif Player_answer > self.ranswer:
             self.chances -= 1
