@@ -1,9 +1,21 @@
 莉沫酱革命协议 0x0 版本
 
-版权所无 🍥 莉沫酱 <the@librian.net>
+版权所无 🍥 River2017CN <river2017cn@gmail.com>
 
 1. 我认为著作权法是愚蠢的且应当被废除，因此我不觉得我对这个仓库有什么权利。也就是说，我没有可授予你的权利。
 
 2. 你可以对这个仓库的副本做任何事。你这么做的权利是你与生俱来的，而不是我授予你的。
 
 3. 如果你真的这样做了，那么我得提醒你，你也许在事实上触犯了当地法律。但是我的良心保证了我不会起诉你，所以你可以根据你自己的道德判断行事。
+
+
+English
+Rimo Chan's Revolution Agreement Version 0x0
+
+No Copyright 🍥 River2017CN <river2017cn@gmail.com>
+
+1. I consider copyright law to be foolish and should be abolished. Therefore, I do not believe that I have any rights over this repository. In other words, I do not grant you any rights.
+
+2. You are free to do anything with copies of this repository. Your rights to do so are inherent and not granted by me.
+
+3. If you choose to do so, I must remind you that you may potentially violate local laws. However, my conscience assures me that I will not sue you, so you may act according to your own moral judgment.
