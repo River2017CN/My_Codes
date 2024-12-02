@@ -1,4 +1,4 @@
-import random  # 导入random模
+import random  # 导入random
 chance = 10  #回合次数限制
 guessed = ""
 
